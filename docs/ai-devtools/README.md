@@ -44,7 +44,7 @@ Uma skill conta como encontrada se aparece no currículo como palavra completa, 
 1. **A vaga é provisória.** O arquivo `data/job_description.json` traz um exemplo de resposta da API, não uma vaga. Por isso a vaga usa um formato mínimo (`jobId` e `requiredSkills`), definido em um único arquivo de tipos para facilitar a troca.
 2. **Adaptações na API:** foi adicionado o campo `matchId` (o enunciado permite adaptar a resposta). O `candidateId` é gerado pelo servidor. O `POST` responde `201`, e os erros seguem o formato `{ "error": "mensagem" }`.
 3. **CORS:** o backend aceita por padrão `http://localhost:5173`. Se abrir o frontend por `127.0.0.1`, defina `CORS_ORIGIN` no backend ou use `localhost` nos dois.
-4. **Screenshots e prompts:** a pasta `docs/screenshots` e os arquivos em `docs/ai-devtools/prompts/` são placeholders. Nada foi inventado.
+4. **Evidências do uso de IA:** os prompts utilizados estão em [`prompts/`](./prompts/) (`01-backend.md`, `02-frontend.md` e `03-ui.md`) e os screenshots das conversas em [`../screenshots/`](../screenshots/).
 
 ## Uso de AI DevTools
 
@@ -70,5 +70,5 @@ A IA não dispensou a conferência manual: os currículos reais de `/data` foram
 
 ## Onde está o código
 
-- Backend: [`backend/README.md`](../../backend/README.md), [`routes/match.ts`](../../backend/src/routes/match.ts), [`services/matching.ts`](../../backend/src/services/matching.ts), [`store/matchRepository.ts`](../../backend/src/store/matchRepository.ts)
+- Backend: [`backend/README.md`](../../backend/README.md), [`routes/match.ts`](../../backend/src/routes/match.ts), [`services/matching.ts`](../../backend/src/services/matching.ts), [`store/match-repository.ts`](../../backend/src/store/match-repository.ts)
 - Frontend: [`frontend/README.md`](../../frontend/README.md), [`services/api.ts`](../../frontend/src/services/api.ts), [`UploadForm.tsx`](../../frontend/src/components/UploadForm.tsx), [`ResultDashboard.tsx`](../../frontend/src/components/ResultDashboard.tsx)

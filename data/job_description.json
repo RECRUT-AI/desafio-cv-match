@@ -1,0 +1,9 @@
+{
+  "candidateId": "string",
+  "jobId": "string",
+  "overallScore": 85,
+  "matchedSkills": ["Python", "AWS", "Docker"],
+  "missingSkills": ["Kubernetes", "Terraform"],
+  "insights": "string",
+  "suggestedQuestions": ["array de strings (opcional)"]
+}

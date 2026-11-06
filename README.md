@@ -64,3 +64,31 @@ Desenvolver um MVP de um sistema de matching entre candidatos e vagas para plata
    - Comentários sobre:
      1. Como você usou ferramentas de IA no desenvolvimento?
      2. Onde a IA ajudou mais e onde você preferiu código manual?
+
+## Instruções de instalação e execução
+
+Em um terminal, inicie o backend primeiro:
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Em outro terminal, inicie o frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+O backend fica em `http://localhost:3001` e o frontend em `http://localhost:5173`.
+
+## Decisões técnicas e trade-offs
+
+O backend usa Node.js, Express, TypeScript strict, motor determinístico e armazenamento em memória com `Map`; os relatórios são perdidos ao reiniciar. O frontend usa React + TypeScript, Vite, Tailwind CSS, `fetch` nativo e estado local com `useState`. Após criar uma análise, o frontend consulta o relatório pelo `matchId` para consumir os dois endpoints definidos. A vaga permanece provisória e editável em JSON na tela.
+
+## Uso de AI DevTools
+
+A ser preenchido pelo autor: logs de prompts, screenshots e comentários.
